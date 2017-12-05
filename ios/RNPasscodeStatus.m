@@ -24,6 +24,10 @@ RCT_EXPORT_METHOD(get:(RCTResponseSenderBlock)callback)
   }
 }
 
+i+ (BOOL)requiresMainQueueSetup {
+    return YES;
+}
+
 - (NSDictionary *)constantsToExport
 {
   UIDevice *device = [UIDevice currentDevice];
